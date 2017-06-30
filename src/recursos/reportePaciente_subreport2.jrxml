@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportePaciente_subreport2" pageWidth="572" pageHeight="752" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="51874260-614e-4a90-82bc-d2c22fd5aca6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="ec28bbef-67d0-4ca6-a85e-4f9096a77e3b"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cadera" class="java.lang.Float">
+		<fieldDescription><![CDATA[cadera]]></fieldDescription>
+	</field>
+	<field name="cintura" class="java.lang.Float">
+		<fieldDescription><![CDATA[cintura]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.lang.String">
+		<fieldDescription><![CDATA[fecha]]></fieldDescription>
+	</field>
+	<field name="imc" class="java.lang.Float">
+		<fieldDescription><![CDATA[imc]]></fieldDescription>
+	</field>
+	<field name="muslo" class="java.lang.Float">
+		<fieldDescription><![CDATA[muslo]]></fieldDescription>
+	</field>
+	<field name="pecho" class="java.lang.Float">
+		<fieldDescription><![CDATA[pecho]]></fieldDescription>
+	</field>
+	<field name="peso" class="java.lang.Float">
+		<fieldDescription><![CDATA[peso]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="93" y="33" width="69" height="20" uuid="40c776f3-498e-4a51-8a5f-633f9972c833"/>
+				<text><![CDATA[cadera]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="33" width="64" height="20" uuid="1080b5b5-6be2-4844-a8d9-faf8dc94379e"/>
+				<text><![CDATA[cintura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="33" width="80" height="20" uuid="87b9ceca-d334-4bcc-bd4f-17612df5dd9f"/>
+				<text><![CDATA[fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="272" y="33" width="50" height="20" uuid="d765585d-5ca6-4fcf-85e8-abdcb6afd9ef"/>
+				<text><![CDATA[imc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="346" y="33" width="69" height="20" uuid="ae3d67d3-3b6e-450c-a703-a9add79c5ff0"/>
+				<text><![CDATA[muslo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="33" width="63" height="20" uuid="a747fdae-1128-4f1f-b2ba-c2ed5c57a9ed"/>
+				<text><![CDATA[pecho]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="501" y="33" width="61" height="20" uuid="aec4626a-aa1c-4493-abca-d77a358b2d6d"/>
+				<text><![CDATA[peso]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-10" y="53" width="582" height="1" uuid="5ef6d6c7-3573-4f34-b3de-93c3e9c8049c"/>
+			</line>
+			<line>
+				<reportElement x="-10" y="23" width="582" height="1" uuid="7692b76c-8b25-4572-8b81-57afb34dbabc"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="93" y="0" width="69" height="20" uuid="a69ff2ba-2b16-4955-98fd-11e2ca8a75ab"/>
+				<textFieldExpression><![CDATA[$F{cadera}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="64" height="20" uuid="bee2fd9f-1d64-4a57-9a41-06d25756b889"/>
+				<textFieldExpression><![CDATA[$F{cintura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="70" height="20" uuid="b0c3d9c6-339b-452e-b560-568a64357d18"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="272" y="0" width="38" height="20" uuid="49496d1b-40f7-4cac-b55c-2f2260e75aff"/>
+				<textFieldExpression><![CDATA[$F{imc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="0" width="69" height="20" uuid="882beed2-cd39-4239-b381-507d889df664"/>
+				<textFieldExpression><![CDATA[$F{muslo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="63" height="20" uuid="4783ca78-ba31-476d-84bb-926f7abd41c8"/>
+				<textFieldExpression><![CDATA[$F{pecho}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="501" y="0" width="61" height="20" uuid="66747335-2cd0-4123-8254-63f866c0c4a3"/>
+				<textFieldExpression><![CDATA[$F{peso}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
